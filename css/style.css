@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .chat-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .chat-messages {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .message-content {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+
+  .user-message .message-content {
+    background-color: #0084ff;
+    color: #fff;
+  }
+
+  .action-buttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .chat-input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .action-button {
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .action-button:hover {
+    background-color: #0056b3;
+  }
