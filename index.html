@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat de IA Médico</title>
-  <link rel="stylesheet" href="css/style.css"> <!-- Enlace al archivo CSS -->
-</head>
+  <link rel="stylesheet" href="css/style.css">
+
 <body>
+  <div class="chatbox">
+    <div class="chat-header">
 
-<div class="chat-container">
-  <div class="chat-messages" id="chat-messages">
-    <!-- Mensajes del chat -->
-  </div>
-  <input type="text" class="chat-input" placeholder="Escribe un mensaje..." id="user-input">
-  <div class="action-buttons">
-    <button class="action-button" onclick="sendMessage()">Enviar</button>
-  </div>
-</div>
+      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">AI Health Assistant</h2>
+    </div>
+    <div class="chat-content">
+      <div class="chat-message user-message">
+        <div class="message-bubble">
+          <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hi, I'm a medical AI here to help answer your health questions. How can I assist you today?</p>
 
-<script src="js/main.js"></script> <!-- Enlace al archivo JavaScript -->
+        </div>
+      </div>
+      <div class="chat-message ai-message">
+        <div class="message-bubble" id="output">
+          <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">AI: N/A</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="input" placeholder="Escriba su consulta medica...">
+      <button id="buscar" >Send</button>
+    </div>
+  </div>
 </body>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </html>
-
