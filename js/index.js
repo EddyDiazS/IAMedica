@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         $(".chat-content").append('<div id="loading-message" class="chat-message ai-message"><div class="message-bubble">Cargando...</div></div>');
 
-        var promptMessage = "Eres un médico, así que solo responderás preguntas sobre medicina. En caso de que la pregunta no esté relacionada con medicina, dirás que eres un doctor y que solo responderás preguntas médicas. Respondera siempre en el idioma en que te escriben" + userInput;
+        var promptMessage = "Eres un médico, así que solo responderás preguntas sobre medicina. En caso de que la pregunta no esté relacionada con medicina, dirás que eres un doctor y que solo responderás preguntas médicas. Responde SIEMPRE en español O EN EL IDIOMA EN EL QUE TE ESCRIBEN EN CASO TAL DE QUE NO TE ESPECIFIQUEN" + userInput;
 
         var requestData = {
             "model": "llama2",
