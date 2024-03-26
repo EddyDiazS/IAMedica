@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat de IA Médico</title>
+  <!-- Enlaza tu archivo CSS externo -->
   <link rel="stylesheet" href="css/style.css">
-
+</head>
 <body>
   <div class="chatbox">
     <div class="chat-header">
-
+      <!-- Añade un título a tu chatbox -->
       <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">AI Health Assistant</h2>
     </div>
     <div class="chat-content">
       <div class="chat-message user-message">
         <div class="message-bubble">
+          <!-- Mensaje inicial del chatbot -->
           <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hi, I'm a medical AI here to help answer your health questions. How can I assist you today?</p>
-
         </div>
       </div>
       <div class="chat-message ai-message">
         <div class="message-bubble" id="output">
+          <!-- El mensaje de salida de la IA se actualizará aquí -->
           <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">AI: N/A</p>
         </div>
-        
       </div>
     </div>
     <div class="chat-input">
+      <!-- Agrega un campo de entrada para que los usuarios escriban sus consultas -->
       <input type="text" id="input" placeholder="Escriba su consulta medica...">
-      <button id="buscar" >Send</button>
+      <!-- El botón para enviar la consulta -->
+      <button id="buscar">Send</button>
     </div>
   </div>
+  <!-- Enlaza tus archivos JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </html>
